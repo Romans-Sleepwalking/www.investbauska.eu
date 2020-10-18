@@ -49,28 +49,21 @@
     <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">STATS</a>
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
 </nav>
-<!-- Header with full-height image -->
+<!-- Welcome Video -->
 <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
     <div class="w3-display-left w3-text-white" style="padding:48px">
-        <span class="w3-jumbo w3-hide-small">Start something that matters</span><br>
-        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Start something that matters</span><br>
-        <span class="w3-large">Your opportunities and bla-bla-bla.</span>
-        <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Learn more and call us today</a></p>
-    </div>
-    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
-        <i class="fa fa-facebook-official w3-hover-opacity"></i>
-        <i class="fa fa-instagram w3-hover-opacity"></i>
-        <i class="fa fa-snapchat w3-hover-opacity"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-        <i class="fa fa-twitter w3-hover-opacity"></i>
-        <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <span class="w3-jumbo w3-hide-small">Welcome Video</span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium">Welcome Video</span><br>
     </div>
 </header>
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
-    <h3 class="w3-center">ABOUT THE INDUSTRIAL ZONE</h3>
-    <p class="w3-center w3-large">Key features of our offer</p>
-    <div class="w3-row-padding w3-center" style="margin-top:64px">
+<!-- Map -->
+<div style="margin-top:5px">
+    <img src="/BIZ Website/IZT/Images/Map.png" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
+</div>
+<!-- About -->
+<div class="w3-container" style="padding:60px 16px" id="about">
+    <!-- Connotations with Icons -->
+    <div class="w3-row-padding w3-center" style="margin-top:20px">
         <div class="w3-quarter">
             <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
             <p class="w3-large">Support</p>
@@ -92,12 +85,10 @@
             <p>Some text.</p>
         </div>
     </div>
-</div>
-<!-- Promo Section - "We know design" -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px">
-    <div class="w3-row-padding">
+    <!-- Paragraph + Image -->
+    <div class="w3-row-padding" style="margin-top:100px">
         <div class="w3-col m6">
-            <h3>We know agriculture.</h3>
+            <h3>We know something.</h3>
             <p>Long ago, the four nations lived together in harmony. Then, everything changed when the Fire Nation attacked. Only the Avatar, master of all four elements, could stop them, but when the world needed him most, he vanished. A hundred years passed and my brother and I discovered the new Avatar, an airbender named Aang.</p>
             <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Pictures</a></p>
         </div>
@@ -106,11 +97,65 @@
         </div>
     </div>
 </div>
-<!-- Team Section -->
+<!-- Statistics in numbers -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">14+</span>
+        <br>Something-1
+    </div>
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">55+</span>
+        <br>Something-2
+    </div>
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">89+</span>
+        <br>Something-3
+    </div>
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">150+</span>
+        <br>Something-4
+    </div>
+</div>
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="img01" class="w3-image" alt="">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+<!-- Statistics in percents -->
+<div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h3>Something.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                tempor incididunt ut labore et dolore.
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                tempor incididunt ut labore et dolore.
+            </p>
+        </div>
+        <div class="w3-col m6">
+            <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Something-1</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Something-2</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Something-3</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Team -->
 <div class="w3-container" style="padding:128px 16px" id="team">
     <h3 class="w3-center">THE TEAM</h3>
-    <p class="w3-center w3-large">The ones who runs this project</p>
-    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+    <div class="w3-row-padding w3-grayscale" style="margin-top:40px">
         <div class="w3-col l3 m6 w3-margin-bottom">
             <div class="w3-card">
                 <img src="/BIZ Website/IZT/Images/Ilze.jpg" alt="Ilze" style="width:100%">
@@ -118,7 +163,6 @@
                     <h3>Ilze Tijone</h3>
                     <p class="w3-opacity">Project Manager</p>
                     <p>Sweet woman.</p>
-                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
                 </div>
             </div>
         </div>
@@ -127,9 +171,8 @@
                 <img src="/BIZ Website/IZT/Images/Roberts.jpg" alt="Roberts" style="width:100%">
                 <div class="w3-container">
                     <h3>Roberts Gaizutis</h3>
-                    <p class="w3-opacity">Cool Guy from VATP.</p>
+                    <p class="w3-opacity">Cool0 VATP.</p>
                     <p>Yeah, he is cool.</p>
-                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
                 </div>
             </div>
         </div>
@@ -140,7 +183,6 @@
                     <h3>Romans</h3>
                     <p class="w3-opacity">IZT Member</p>
                     <p>Crappy website is my fault.</p>
-                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
                 </div>
             </div>
         </div>
@@ -151,35 +193,36 @@
                     <h3>Claudio Rivera</h3>
                     <p class="w3-opacity">BITL Director</p>
                     <p>What he's doing here?</p>
-                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Promo Section "Statistics" -->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
-    <div class="w3-quarter">
-        <span class="w3-xxlarge">14+</span>
-        <br>Partners
-    </div>
-    <div class="w3-quarter">
-        <span class="w3-xxlarge">55+</span>
-        <br>Projects Done
-    </div>
-    <div class="w3-quarter">
-        <span class="w3-xxlarge">89+</span>
-        <br>Happy Clients
-    </div>
-    <div class="w3-quarter">
-        <span class="w3-xxlarge">150+</span>
-        <br>Meetings
+<!-- Email API -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
+    <div style="margin-top:48px">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bauska, LV</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +371 20203031</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: iz@bauska.lv</p>
+        <br>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-black" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                </button>
+            </p>
+        </form>
     </div>
 </div>
-<!-- Work Section -->
+<!-- Media -->
 <div class="w3-container" style="padding:128px 16px" id="work">
-    <h3 class="w3-center">PHOTO GALLERY</h3>
-    <p class="w3-center w3-large">What we've done for people</p>
+    <h3 class="w3-center">Gallery</h3>
     <div class="w3-row-padding" style="margin-top:64px">
         <div class="w3-col l3 m6">
             <img src="/BIZ Website/IZT/Images/Gallery_HQ.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 1">
@@ -207,66 +250,6 @@
         <div class="w3-col l3 m6">
             <img src="/BIZ Website/IZT/Images/Gallery_HQ.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Image 8">
         </div>
-    </div>
-</div>
-<!-- Modal for full size images on click-->
-<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-        <img id="img01" class="w3-image" alt="">
-        <p id="caption" class="w3-opacity w3-large"></p>
-    </div>
-</div>
-<!-- Skills Section -->
-<div class="w3-container w3-light-grey w3-padding-64">
-    <div class="w3-row-padding">
-        <div class="w3-col m6">
-            <h3>Our Skills.</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                tempor incididunt ut labore et dolore.
-            </p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
-                tempor incididunt ut labore et dolore.
-            </p>
-        </div>
-        <div class="w3-col m6">
-            <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
-            </div>
-            <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Contact Section -->
-<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
-    <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-    <div style="margin-top:48px">
-        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bauska, LV</p>
-        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +371 20203031</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: iz@bauska.lv</p>
-        <br>
-        <form action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
-            <p>
-                <button class="w3-button w3-black" type="submit">
-                    <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                </button>
-            </p>
-        </form>
-        <!-- Image of location/map -->
-        <img src="/BIZ Website/IZT/Images/MainBG.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px">
     </div>
 </div>
 <!-- Footer -->
