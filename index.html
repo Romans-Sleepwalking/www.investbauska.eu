@@ -6,7 +6,9 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+crossorigin=""/><style>
     body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
     body, html {
         height: 100%;
@@ -57,8 +59,32 @@
     </div>
 </header>
 <!-- Map -->
-<div style="margin-top:15px">
-    <iframe width=100% height="600px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=24.19768810272217%2C56.401649401038235%2C24.245581626892093%2C56.41615663913406&amp;layer=mapnik" ></iframe>
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+<div id="mapid" style="margin-top:15px; width:100%; height:600px">
+    <script>
+        var mymap = L.map('mapid').setView([56.4079, 24.2228], 15);
+    
+        L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2tydWdzIiwiYSI6ImNrZ2Y2MmViZjB6dDUyeWxlZWE1eTk4NHUifQ.e_mPuWKu_BO3lJ4iGfLZ-g', {
+            maxZoom: 18,
+            attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+                '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+                'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+            id: 'mapbox/streets-v11',
+            tileSize: 512,
+            zoomOffset: -1
+        }).addTo(mymap);
+
+        var polygon = L.polygon([
+        [56.414186, 24.229574],
+        [56.411907, 24.212322],
+        [56.404214, 24.221077],
+        [56.406114, 24.238672],
+        [56.413379, 24.234467]
+        ]).addTo(mymap);
+
+    </script>
 </div>
 <!-- About -->
 <div class="w3-container" style="padding:60px 16px" id="about">
