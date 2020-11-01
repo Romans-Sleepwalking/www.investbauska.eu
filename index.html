@@ -25,10 +25,6 @@ crossorigin=""/><style>
         padding: 16px;
     }
     /* Styles for the map section */
-    .mapid {
-        float: right;
-        width: 50%;
-    }
     .leftfloat {
         float: left;
         width: 50%;
@@ -73,7 +69,7 @@ crossorigin=""/><style>
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-<div id="mapid" style="margin-top:15px; height:600px">
+<div id="mapid" style="margin-top:15px; float:right; width:50%; height:600px">
     <script type="text/javascript" src="land.js"></script>
     <script>
         var mymap = L.map('mapid').setView([56.4079, 24.2228], 15);
@@ -114,7 +110,8 @@ crossorigin=""/><style>
 </div>
 <div id="leftfloat">
 <h3>Some text about the green-field</h3>
-<p>Long ago, the four nations lived together in harmony. Then, everything changed when the Fire Nation attacked. Only the Avatar, master of all four elements, could stop them, but when the world needed him most, he vanished. A hundred years passed and my brother and I discovered the new Avatar, an airbender named Aang.</p>
+<p>Long ago, the four nations lived together in harmony. Then, everything changed when the Fire Nation attacked.</p>
+<p>Only the Avatar, master of all four elements, could stop them, but when the world needed him most, he vanished. A hundred years passed and my brother and I discovered the new Avatar, an airbender named Aang.</p>
     
 </div>
 <!-- About -->
