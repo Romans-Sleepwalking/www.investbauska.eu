@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <title>Business in Bauska</title>
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -108,7 +109,9 @@ crossorigin=""/>
         popupAnchor:  [0, -7]
         });
         
-        L.geoJSON(gasLine).addTo(mymap);
+        L.geoJSON(gasLine).bindPopup("<p>This is a medium pressure gas pipeline</p>").addTo(mymap);
+
+        L.geoJSON(rails, {style:{color: "#dc2828"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A connection to the Industrial Zone in 2 km length is possible.</h3>").addTo(mymap);
 
         var polyLidl7 = L.polygon([
         [56.405672, 24.227670],
@@ -145,7 +148,7 @@ crossorigin=""/>
         ],).bindPopup("<h2>Biržu street 86</h2><p>The area of this property is 0.7 ha</p><small>Plot-code: </small>").addTo(mymap);
 
         var transformer = L.marker([56.404190, 24.229617], {icon: highvIcon}).addTo(mymap);
-        var popup = transformer.bindPopup("<h2>2.4 MW Transformer</h2>");
+        var popup = transformer.bindPopup("<p>2.4 MW Transformer</p>");
 
         var sevage = L.marker([56.403335, 24.223909], {icon: sewageIcon}).addTo(mymap);
         var popup = sevage.bindPopup("<p>Sewage pump station</p>");
@@ -157,7 +160,7 @@ crossorigin=""/>
 </div>
 <div id="leftfloat" style="margin:auto; padding:15px 35px 25px">
     
-<iframe width="560" height="600" src="https://www.youtube-nocookie.com/embed/8ilZuL9bkEU?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="47%" height="600" src="https://www.youtube-nocookie.com/embed/8ilZuL9bkEU?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 </div>
 <!-- Desc about the zone -->
