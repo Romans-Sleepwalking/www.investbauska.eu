@@ -36,7 +36,7 @@ crossorigin=""/>
 <div class="w3-top">
     <div class="w3-bar w3-white w3-card" id="myNavbar">
         <!--LOGO-->
-        <img src="Images/BAUSKA_logo-01.jpg" href="#home" width = 70 >  
+        <img src="Images/bauska_logo_zils.jpeg" href="#home" width = 70 >  
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
             <a href="#about" class="w3-bar-item w3-button">ABOUT</a>
@@ -75,7 +75,7 @@ crossorigin=""/>
    crossorigin=""></script>
 <div id="about">
 <div id="mapid" style="margin-top:15px; float:right; width:50%; height:600px">
-    <script type="text/javascript" src="land.js"></script>
+    <script type="text/javascript" src="geojson.js"></script>
     <script>
         var mymap = L.map('mapid',{
             scrollWheelZoom: false
@@ -91,6 +91,25 @@ crossorigin=""/>
             zoomOffset: -1
         }).addTo(mymap);
 
+        //Icons
+        var highvIcon = L.icon({
+        iconUrl: 'Images/highv.png',
+
+        iconSize:     [25, 21.6], // size of the icon
+        iconAnchor:   [12.5, 11], // point of the icon which will correspond to marker's location
+        popupAnchor:  [0, -11] // point from which the popup should open relative to the iconAnchor
+        });
+
+        var sewageIcon = L.icon({
+        iconUrl: 'Images/plumberSewage.svg',
+
+        iconSize:     [15, 15],
+        iconAnchor:   [7, 7],
+        popupAnchor:  [0, -7]
+        });
+        
+        L.geoJSON(gasLine).addTo(mymap);
+
         var polyLidl7 = L.polygon([
         [56.405672, 24.227670],
         [56.405514, 24.227482],
@@ -100,18 +119,55 @@ crossorigin=""/>
         [56.405995, 24.223180]
         ],).bindPopup("<h2>Runway street 7</h2><p>The area of this property is 4.8 ha</p><small>Plot-code: 4001 005 0344</small>").addTo(mymap);
 
-        L.GeoJSON(geojson).addTo(map);
+        var polyB1 = L.polygon([
+        [56.405781, 24.227707],
+        [56.407835, 24.227922],
+        [56.408239, 24.224188],
+        [56.406054, 24.223931],
+        ],).bindPopup("<h2>Biržu street 86</h2><p>The area of this property is 3.1 ha</p><small>Plot-code: </small>").addTo(mymap);
+
+        var polyB2 = L.polygon([
+        [56.403335, 24.224102],
+        [56.403870, 24.222944],
+        [56.402920, 24.221163],
+        [56.402546, 24.222386],
+        [56.402902, 24.223030],
+        [56.403116, 24.223663]
+        ],).bindPopup("<h2>Biržu street 86</h2><p>The area of this property is 1.3 ha</p><small>Plot-code: </small>").addTo(mymap);
+
+        var polyB3 = L.polygon([
+        [56.402439, 24.222719],
+        [56.402397, 24.222740],
+        [56.402243, 24.223191],
+        [56.402267, 24.224489],
+        [56.402730, 24.225229],
+        [56.403110, 24.224328]
+        ],).bindPopup("<h2>Biržu street 86</h2><p>The area of this property is 0.7 ha</p><small>Plot-code: </small>").addTo(mymap);
+
+        var transformer = L.marker([56.404190, 24.229617], {icon: highvIcon}).addTo(mymap);
+        var popup = transformer.bindPopup("<h2>2.4 MW Transformer</h2>");
+
+        var sevage = L.marker([56.403335, 24.223909], {icon: sewageIcon}).addTo(mymap);
+        var popup = sevage.bindPopup("<p>Sewage pump station</p>");
+
+        //L.GeoJSON(geojson).addTo(mymap);
 
     </script>
 </div>
 </div>
-<div id="leftfloat" style="padding:15px 35px 25px">
-<h2>Benifits of the Bauskas industrial zone.</h2>
-<h3>18 km from the Lithuanian border.</h3><br>
-<h3>77 km from the Riga Free Port.</h3>
-<h3>79 km from the Riga International Airport.</h3>
-<h3>30 km from the closest industrial railway.</h3>    
+<div id="leftfloat" style="margin:auto; padding:15px 35px 25px">
     
+<iframe width="560" height="600" src="https://www.youtube-nocookie.com/embed/8ilZuL9bkEU?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</div>
+<!-- Desc about the zone -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <h2>Benifits of the Bauskas industrial zone.</h2>
+    <h3>18 km from the Lithuanian border.</h3><br>
+    <h3>75 km from the Riga Free Port.</h3>
+    <h3>80 km from the Riga International Airport.</h3>
+    <h3>30 km from the closest industrial railway.</h3>
+    <h3>Properties are available for rent with the later opportunity to purchase</h3>
 </div>
 <!-- About -->
 <div class="w3-container" style="padding:150px 16px 60px">
