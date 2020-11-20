@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
@@ -47,7 +47,7 @@ crossorigin=""/>
     <div class="w3-bar w3-card" id="myNavbar" style="background-color: #202945; z-index:1001;position:fixed">
         <!--LOGO-->
         <div class="w3-bar-item ">
-        <img src="Images/bauska_logo_zils.jpeg" href="#home" width = 50px >
+        <img src="Images/bauska_logo_zils.jpeg" href="#home" style="width:50px" alt="Logo">
         </div>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
@@ -342,7 +342,7 @@ L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas
 </div>
 <div id="leftfloat" style="margin:auto; padding:15px 35px 25px">
     
-<iframe width="47%" height="600" src="https://www.youtube-nocookie.com/embed/8ilZuL9bkEU?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe title="Investing in Bauska Logistics Park" width="47%" height="600" src="https://www.youtube-nocookie.com/embed/8ilZuL9bkEU?modestbranding=1&color=white" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     
 </div>
 <!-- Desc about the zone -->
@@ -387,7 +387,7 @@ L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas
             <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Pictures</a></p>
         </div>
         <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="Images/17037.jpg" width="100%">
+            <img class="w3-image w3-round-large" src="Images/17037.jpg" width="100%" alt="Egils Levits">
         </div>
     </div>
 </div>
@@ -455,13 +455,17 @@ L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas
     <div style="margin-top:48px;">
         <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Bauska, LV</p>
         <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +371 20203031</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: iz@bauska.lv</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color:black"></i> Email: iz@bauska.lv</p>
         <br>
         <form action="/action_page.php" target="_blank">
-            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
-            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p><input id="nameMsg" class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input id="email" class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input id="subj" class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input id="msg" class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <label for="nameMsg">Enter your name to contact us.</label>
+            <label for="email">Enter your email</label>
+            <label for="subj">Enter the subject of your message</label>
+            <label for="name">Message text goes here</label>
             <p>
                 <button class="w3-button w3-black" type="submit">
                     <i class="fa fa-paper-plane"></i> SEND MESSAGE
