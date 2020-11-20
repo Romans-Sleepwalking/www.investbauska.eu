@@ -135,6 +135,14 @@ crossorigin=""/>
         iconAnchor:   [10, 14],
         popupAnchor:  [0, -14]
         });
+
+        var anchorIcon = L.icon({
+        iconUrl: 'Images/anchor.svg',
+        //251 × 304
+        iconSize:     [20, 24,3],
+        iconAnchor:   [10, 12],
+        popupAnchor:  [0, -12]
+        });
         
         var polyLidl7 = L.polygon([
         [56.405672, 24.227670],
@@ -324,18 +332,28 @@ var popup2 = sevage.bindPopup("<p>Sewage pump station</p>");
 var gas = L.marker([56.406185, 24.217021], {icon: gasIcon}).addTo(mymap);
 var popup4 = gas.bindPopup("<p>Medium pressure gas pipeline</p>");
 
+var anchorL = L.marker([56.522666, 20.980797], {icon: anchorIcon}).addTo(mymap);
+var popup5 = anchorL.bindPopup("<p>Port of Liepaja. One of the three largest Latvian ice-free ports provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
+
+var anchorR = L.marker([57.008309, 24.092331], {icon: anchorIcon}).addTo(mymap);
+var popup6 = anchorR.bindPopup("<p>Port of Riga. The largest Latvian ice-free port provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
+
+var anchorV = L.marker([57.397971, 21.560540], {icon: anchorIcon}).addTo(mymap);
+var popup7 = anchorV.bindPopup("<p>Port of Ventspils. One of the three largest Latvian ice-free ports provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
+
+
 // commented to hide the pin - it moves when zooming out
 // var centre = L.marker([56.4082863, 24.1876674], {icon: pinIcon}).addTo(mymap);
 // var popup3 = centre.bindPopup("<p>Centre of Bauska</p>");
 
 L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
-        L.geoJSON(gasLine2, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
-        L.geoJSON(munBorder, {style:{color: "#336699"}}).bindPopup("<p>Bauska Municipality border</p>").addTo(mymap);
-        L.geoJSON(waterLine, {style:{color: "#33cccc"}}).bindPopup("<p>Water–line</p>").addTo(mymap);
+L.geoJSON(gasLine2, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
+L.geoJSON(munBorder, {style:{color: "#336699"}}).bindPopup("<p>Bauska Municipality border</p>").addTo(mymap);
+L.geoJSON(waterLine, {style:{color: "#33cccc"}}).bindPopup("<p>Water–line</p>").addTo(mymap);
         
-        L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km).</h3>").addTo(mymap);
+L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km).</h3>").addTo(mymap);
 
-        L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3><h3>Helsinki–Prague</h3>").addTo(mymap);
+L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3><h3>Helsinki–Prague</h3>").addTo(mymap);
 
     </script>
 </div>
