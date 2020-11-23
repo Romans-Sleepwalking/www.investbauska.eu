@@ -421,7 +421,8 @@ Helsinki–Prague</p>
     </div>
     <div class="w3-quarter">
         <span class="w3-xxlarge">786.7 km<sup>2</sup> and 6.14 km<sup>2</sup></span>
-        <br>Municipalities land area and Bauska area
+        <br>Land area of the municipality and Bauska
+        <!-- From bauska.lv website -->
     </div>
     <div class="w3-quarter">
         <span class="w3-xxlarge">13 860</span>
@@ -468,24 +469,40 @@ Helsinki–Prague</p>
         </div>
     </div>
 </div>
+<div class="w3-container w3-row w3-center w3-padding-48">
+    <h2></h2>
+    <h3>Short description about Bauska as a city</h3>
+    <h3>Living expenses?</h3>
+    <h3>Wages?</h3>
 
+    <!-- Link to News -->
+    <h3><a href="#" target="_blank" id="newsHyper" onclick="openNews();">Entrepreneurial news from Bauska website</a></h3>
+    <br>
+    <script>
+    function openNews() {
+        var d = new Date();
+        var month = new Array(); month[0] = "janvaris"; month[1] = "februaris"; month[2] = "marts"; month[3] = "aprilis"; month[4] = "maijs"; month[5] = "junijs"; month[6] = "julijs"; month[7] = "augusts"; month[8] = "septembris"; month[9] = "oktobris"; month[10] = "novembris"; month[11] = "decembris";
+        document.getElementById("newsHyper").href="https://webtranslate.tilde.com/en/Translate/Website?url=https://www.bauska.lv/lv/uznemejdarbiba/jaunumi/"+d.getFullYear()+"/"+month[d.getMonth()]; 
+    }
+    </script>
+</div>
 <!-- Email API -->
 <div class="w3-container w3-light-grey" style="padding:128px 32px" id="contact">
     <div style="margin:auto; width:65%">
     <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Lets get in touch. Send us a message:</p>
-    <div style="margin-top:48px;">
+    <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+    <div style="margin-top:48px">
         <div style="float:left; width:50%; margin:auto; padding:15px 35px 25px">
-        <img class="w3-image w3-round" style="float:right; padding-left:15px; width:121px; height:140px" src="Images/IlzeCrop.jpg" alt="Head of Development and Planning Ilze Tijone">
+        <img class="w3-image w3-round" style="float:right; width:121px; height:140px" src="Images/IlzeCrop.jpg" alt="Head of Development and Planning Ilze Tijone">
         <p><i class="fa fa-map-marker-alt fa-fw w3-xxlarge w3-margin-right"></i> Uzvaras iela 1, Bauska, LV-3901</p>
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color:black"></i> Email: ilze.tijone <code>at</code> bauska.lv (Ilze Tijone, Head of Development and Planning)</p>
-        <p><i class="fas fa-phone-alt fa-fw w3-xxlarge w3-margin-right"></i> Phone: +371 63922233 | +371 20203031</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color:black"></i> Email: <a href="mailto:ilze.tijone@bauska.lv" style="text-decoration:none">ilze.tijone@bauska.lv</a> (Ilze Tijone, Head of Development and Planning)</p>
+        <p><i class="fas fa-phone-alt fa-fw w3-xxlarge w3-margin-right"></i> Phone: <a href="tel:37163922233" style="text-decoration:none">+371 63922233</a> | <a href="tel:37120203031" style="text-decoration:none">+371 20203031</a></p>
         </div>
         <div style="float:right; width:50%; margin:auto; padding:15px 35px 25px">
             <img class="w3-image w3-round" style="float:right; width:111px; height:140px" src="Images/DaceCrop.jpg" alt="Site planner Dace Platonova">
             <p><i class="fa fa-map-marker-alt fa-fw w3-xxlarge w3-margin-right"></i> Uzvaras iela 1, Bauska, LV-3901</p>
-            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color:black"></i> Email: dace.platonova <code>at</code> bauska.lv (Dace Platonova, Site planner)</p>
-            <p><i class="fas fa-phone-alt fa-fw w3-xxlarge w3-margin-right"></i> Phone: +371 63963972</p>
+            <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right" style="color:black"></i> Email: <a href="mailto:dace.platonova@bauska.lv" style="text-decoration:none">dace.platonova@bauska.lv</a> (Dace Platonova, Site planner)</p>
+            <p><i class="fas fa-phone-alt fa-fw w3-xxlarge w3-margin-right"></i> Phone: <a href="tel:37163963972" style="text-decoration:none">+371 63963972</a></p>
             </div>
         <br>
         <form action="/action_page.php" target="_blank">
