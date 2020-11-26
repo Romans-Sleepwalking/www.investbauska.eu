@@ -9,7 +9,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="StyleShit_2.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+<!-- an old library <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"> -->
+    <!-- the latest library --> <script src="https://kit.fontawesome.com/9f3296d911.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 crossorigin=""/>
@@ -17,7 +18,7 @@ crossorigin=""/>
 <link rel="preconnect" href="https://i.ytimg.com/">
 <meta name="google-site-verification" content="8befdf7PyjeFQFOHaPGNBQZvzkRqm1LrYSgdtpUJb5E" />
 </head>
-<body>
+<div>
     <style>
         body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
         body, html {
@@ -55,10 +56,10 @@ crossorigin=""/>
         </div>
         <!-- Right-sided navbar links -->
         <div class="w3-right w3-hide-small">
-            <a href="#about" class="w3-bar-item w3-button" style="color:white"> ABOUT</a>
-            <!-- <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a> -->
-            <a href="#stats" class="w3-bar-item w3-button" style="color:white"><i class="fa fa-th fa-w-16"></i> STATS</a>
-            <a href="#contact" class="w3-bar-item w3-button" style="color:white"><i class="fa fa-envelope"></i> CONTACT</a>
+            <!-- &#160; that is an extra space -->
+            <a href="#map" class="w3-bar-item w3-button" style="color:white"><i class="fa fa-map"></i>&#160;&#160;&#160;MAP&#160;</a>
+            <a href="#stats" class="w3-bar-item w3-button" style="color:white"><i class="fa fa-bar-chart"></i>&#160;&#160;&#160;STATISTICS&#160;</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="color:white"><i class="fa fa-paper-plane"></i>&#160;&#160;&#160;CONTACTS&#160;&#160;&#160;</a>
         </div>
         <!-- Hide right-floated links on small screens and replace them with a menu icon -->
         <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -69,10 +70,9 @@ crossorigin=""/>
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
-    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="#map" onclick="w3_close()" class="w3-bar-item w3-button">MAP</a>
     <a href="#stats" onclick="w3_close()" class="w3-bar-item w3-button">STATS</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACTS</a>
 </nav>
 <!-- Welcome Video -->
 <div id="home">
@@ -83,14 +83,44 @@ crossorigin=""/>
         <source src="video/welcomevideo_Trim.mp4" type="video/mp4">
     </video>
 </div>
-
 </div>
-<!-- Map -->
+
+<!-- Intro and Map -->
+    <div class="w3-container w3-row w3-center w3-padding-100">
+        <h1>The city of Bauska invites you to start or expand your business in an enriched industrial area with advanced road infrastructure, communications, and great profit potential.</h1>
+        <h3>Bauska Industrial Park is a modern functional environment scalable for any production size.</h3>
+    </div>
+    <div class="w3-container" style="padding:30px 15px 40px">
+        <!-- Connotations with Icons -->
+        <div class="w3-row-padding w3-center" style="margin-top:20px">
+            <div class="w3-quarter">
+                <i class="fas fa-utensils w3-margin-bottom w3-jumbo w3-center"></i>
+                <h3>Restaurant<br/></h3>
+            </div>
+            <div class="w3-quarter">
+                <i class="fas fa-building w3-margin-bottom w3-jumbo"></i>
+                <h3>Office</h3>
+            </div>
+            <div class="w3-quarter">
+                <i class="fas fa-tractor w3-margin-bottom w3-jumbo"></i>
+                <h3>Agriculture</h3>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-industry w3-margin-bottom w3-jumbo"></i>
+                <h3>Eco-production</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-row w3-center w3-padding-30">
+        <h1>Main benefit is the location</h1>
+    </div>
+
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
    crossorigin=""></script>
-<div id="about">
-<div id="mapid" style="margin-top:15px; float:right; width:50%; height:600px; position:relative; z-index: 998;">
+<div id="map">
+<div id="mapid" style="margin-top:40px; float:right; width:50%; height:600px; position:relative; z-index: 998;">
 <script type="text/javascript" src="geojson.js"></script>
 <script>
     var mymap = L.map('mapid',{
@@ -354,51 +384,50 @@ crossorigin=""/>
 </script>
 </div>
 </div>
-<div id="leftfloat" style="margin:auto; padding:15px 35px 25px">
+<div id="leftfloat" style="margin:auto; padding:80px 35px 25px">
     
 <iframe title="Investing in Bauska Logistics Park" width="47%" height="600" src="https://www.youtube-nocookie.com/embed/8ilZuL9bkEU?modestbranding=1&color=white" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
+
+    <div class="w3-container" style="padding:30px 15px 20px">
+        <!-- Connotations with Icons -->
+        <div class="w3-row-padding w3-center" style="margin-top:20px">
+            <div class="w3-quarter">
+                <i class="fas fa-road w3-margin-bottom w3-jumbo w3-center"></i>
+                <h3>A7<br/></h3>
+                <p class="w3-large">Largest Baltic artery</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fas fa-city w3-margin-bottom w3-jumbo"></i>
+                <h3>1276 Businesses</h3>
+                <p class="w3-large">Great local community</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fas fa-seedling w3-margin-bottom w3-jumbo"></i>
+                <h3>746 Greenfields</h3>
+                <p class="w3-large">Essential neighbour supplies</p>
+            </div>
+            <div class="w3-quarter">
+                <i class="fa fa-train w3-margin-bottom w3-jumbo"></i>
+                <h3>Rail Baltica</h3>
+                <p class="w3-large">249 (120) km/h passenger (freight)</p>
+            </div>
+        </div>
+    </div>
+    <div class="w3-container w3-row w3-center w3-padding-10">
+        <h3>The municipality provides essential support for the European Union growing industries.</h3>
+    </div>
 </div>
-<!-- Desc about the zone -->
-<div class="w3-container w3-row w3-center w3-padding-48">
-    <h2></h2>
-    <h3>Bauska Industrial Park is being built with the aim of developing an industrial zone with excellent road infrastructure and built communications.</h3><h3>This modern environment will be appreciated both by small and medium-sized businesses, which could start up with small financial investments, and large businesses, for which modern communications are important for providing production and processing capacities.</h3><br>
-    
-</div>
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <!-- About -->
+<div id="stats" class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
     <h2>Benifits of the Bauskas industrial zone</h2>
-    <h3>18 km from the Lithuanian border</h3><br>
+    <h3>18 km from the Lithuanian border</h3>
     <h3>75 km from the Riga Free Port</h3>
-    <h3>80 km from the Riga International Airport</h3>
+    <h3>80 km from the Riga International Airport 59 min</h3>
     <h3>30 km from the closest industrial railway</h3>
     <h3>Properties are available for rent with the later opportunity to purchase</h3>
 </div>
-<!-- About -->
-<div id="stats" class="w3-container" style="padding:150px 16px 60px">
-    <!-- Connotations with Icons -->
-    <div class="w3-row-padding w3-center" style="margin-top:20px">
-        <div class="w3-quarter">
-            <i class="fa fa-truck fa-flip-horizontal w3-margin-bottom w3-jumbo w3-center"></i>
-            <h3>Easily Accessible Location<br/></h3>
-            <p class="w3-large">Next to European route E67
-Helsinki–Prague</p>
-        </div>
-        <div class="w3-quarter">
-            <i class="fas fa-seedling w3-margin-bottom w3-jumbo"></i>
-            <h3>Locally accessible resources</h3>
-            <p class="w3-large">746 nearby farms</p>
-        </div>
-        <div class="w3-quarter">
-            <i class="far fa-gem w3-margin-bottom w3-jumbo"></i>
-            <h3>Potential local partners.</h3>
-            <p class="w3-large">1276 local businesses.</p>
-        </div>
-        <div class="w3-quarter">
-            <i class="fa fa-road w3-margin-bottom w3-jumbo"></i>
-            <h3>Close to Lithuania and the Capital of Latvia</h3>
-            <p class="w3-large">10 Minutes to the Border and 1 hour 10 minutes to Riga</p>
-        </div>
-    </div>
+
+<div class="w3-container" style="padding:150px 16px 60px"></div>
     <!-- Paragraph + Image -->
     <div class="w3-row-padding" style="margin-top:100px">
         <div class="w3-col m6">
@@ -506,10 +535,10 @@ Helsinki–Prague</p>
     </script>
 </div>
 <!-- Email API -->
-<div class="w3-container w3-light-grey" style="padding:128px 32px" id="contact">
+<div class="w3-container w3-light-grey" style="padding:100px 32px" id="contact">
     <div style="margin:auto; width:65%">
-    <h3 class="w3-center">CONTACT</h3>
-    <p class="w3-center w3-large">Let's get in touch. Send us a message:</p>
+    <h3 class="w3-center">CONTACT US</h3>
+    <p class="w3-center w3-large">We will answer to your questions as soon as possible</p>
     <div style="margin-top:48px">
         <div style="float:left; width:50%; margin:auto; padding:15px 35px 25px">
         <img class="w3-image w3-round" style="float:right; width:121px; height:140px" src="Images/IlzeCrop.jpg" alt="Head of Development and Planning Ilze Tijone">
