@@ -186,15 +186,15 @@ crossorigin=""/>
     [56.408074, 24.225968],
     [56.405921, 24.225451],
     ],).bindPopup("<p>The area of this plot is 3.1 ha</p><p>Biržu street 86</p>").addTo(mymap);
-
-    var polyB2 = L.polygon([
-    [56.403335, 24.224102],
-    [56.403870, 24.222944],
-    [56.402920, 24.221163],
-    [56.402546, 24.222386],
-    [56.402902, 24.223030],
-    [56.403116, 24.223663]
-    ],).bindPopup("<p>The area of this plot is 1.3 ha</p><p>Biržu street 86</p>").addTo(mymap);
+    //appears to be owned by others
+    // var polyB2 = L.polygon([
+    // [56.403335, 24.224102],
+    // [56.403870, 24.222944],
+    // [56.402920, 24.221163],
+    // [56.402546, 24.222386],
+    // [56.402902, 24.223030],
+    // [56.403116, 24.223663]
+    // ],).bindPopup("<p>The area of this plot is 1.3 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
     var polyB3 = L.polygon([
     [56.402439, 24.222719],
@@ -383,42 +383,39 @@ crossorigin=""/>
 
 </div>
 </div>
-</center>
-
-    <div class="w3-container" style="padding:30px 180px 50px 180px">
-        <!-- Connotations with Icons -->
-        <div class="w3-row-padding w3-center" style="margin-top:90px">
-            <div class="w3-quarter">
-                <i class="fas fa-road w3-margin-bottom w3-jumbo w3-center"></i>
-                <h3>Via Baltica<br/></h3>
-                <p class="w3-large">Largest Baltic artery</p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fas fa-city w3-margin-bottom w3-jumbo"></i>
-                <h3>1276 Businesses</h3>
-                <p class="w3-large">Great community</p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fas fa-seedling w3-margin-bottom w3-jumbo"></i>
-                <h3>746 Local farms</h3>
-                <p class="w3-large">Essential neighbours</p>
-            </div>
-            <div class="w3-quarter">
-                <i class="fa fa-train w3-margin-bottom w3-jumbo"></i>
-                <h3>RailBaltica</h3>
-                <p class="w3-large">249 (120) km/h</p>
-            </div>
+<div class="w3-container" style="padding:30px 180px 50px 180px">
+    <!-- Connotations with Icons -->
+    <div class="w3-row-padding w3-center" style="margin-top:90px">
+        <div class="w3-quarter">
+            <i class="fas fa-road w3-margin-bottom w3-jumbo w3-center"></i>
+            <h3>Via Baltica<br/></h3>
+            <p class="w3-large">Largest Baltic artery</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fas fa-city w3-margin-bottom w3-jumbo"></i>
+            <h3>1276 Businesses</h3>
+            <p class="w3-large">Great community</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fas fa-seedling w3-margin-bottom w3-jumbo"></i>
+            <h3>746 Local farms</h3>
+            <p class="w3-large">Essential neighbours</p>
+        </div>
+        <div class="w3-quarter">
+            <i class="fa fa-train w3-margin-bottom w3-jumbo"></i>
+            <h3>RailBaltica</h3>
+            <p class="w3-large">249 (120) km/h</p>
         </div>
     </div>
 </div>
-    <!-- About -->
+</div>
+<!-- About -->
 <div id="stats" class="w3-container w3-row w3-center w3-dark-grey w3-padding-16">
     <img class="w3-image w3-round-large" src="Images/stats.png" width="60%" alt="Bauska">
 </div>
-
- <center>
-<div id="leftfloat"  style="margin:auto; padding:60px 35px 0px">
-    <iframe width="80%" height="650" src="https://www.youtube.com/embed/_lGtaGNts5w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<center>
+<div style="margin:auto; padding:60px 35px 0px">
+    <iframe width="80%" height="650" src="https://www.youtube.com/embed/_lGtaGNts5w?modestbranding=1&color=white" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </center>
 <div class="w3-container" style="padding:0px 0px 60px"></div>
@@ -433,8 +430,8 @@ crossorigin=""/>
             <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Pictures</a></p><br>
 
         </div>
-        <div class="w3-col m6">
-            <img class="w3-image w3-round-large" src="Images/17037.jpg" width="100%" alt="Bauska">
+        <div class="w3-col m6" style="padding-bottom: 25px;">
+            <img class="w3-image w3-round-large" src="Images/IZT_car.jpg" width="80%" alt="Bauska">
         </div>
     </div>
 </div>
@@ -515,19 +512,17 @@ crossorigin=""/>
         <br>
     </div>
     </div>
-    <div style="height:30%">
-
-    <div class="infogram-embed" data-id="b69dc146-36cb-4854-8826-43c922db9e33" data-type="interactive" data-title="User Dashboard"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"></div>
-    </div>
-    <!-- Link to News -->
-
-    <script>
+<!-- Link to News -->
+<script>
     function openNews() {
         var d = new Date();
         var month = new Array(); month[0] = "janvaris"; month[1] = "februaris"; month[2] = "marts"; month[3] = "aprilis"; month[4] = "maijs"; month[5] = "junijs"; month[6] = "julijs"; month[7] = "augusts"; month[8] = "septembris"; month[9] = "oktobris"; month[10] = "novembris"; month[11] = "decembris";
         document.getElementById("newsHyper").href="https://webtranslate.tilde.com/en/Translate/Website?url=https://www.bauska.lv/lv/uznemejdarbiba/jaunumi/"+d.getFullYear()+"/"+month[d.getMonth()];
     }
-    </script>
+</script>
+<div style="height:25%">
+<div class="infogram-embed" data-id="b69dc146-36cb-4854-8826-43c922db9e33" data-type="interactive" data-title="User Dashboard"></div><script>!function(e,i,n,s){var t="InfogramEmbeds",d=e.getElementsByTagName("script")[0];if(window[t]&&window[t].initialized)window[t].process&&window[t].process();else if(!e.getElementById(n)){var o=e.createElement("script");o.async=1,o.id=n,o.src="https://e.infogram.com/js/dist/embed-loader-min.js",d.parentNode.insertBefore(o,d)}}(document,0,"infogram-async");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"></div>
+</div>
 </div>
 <!-- Email API -->
 <div class="w3-container w3-light-grey" style="padding:76px 32px" id="contact">
