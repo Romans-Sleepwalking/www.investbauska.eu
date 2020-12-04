@@ -10,7 +10,7 @@
 <link rel="stylesheet" href="StyleShit_2.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
 <!-- an old library <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"> -->
-    <!-- the latest library --> <script src="https://kit.fontawesome.com/9f3296d911.js" crossorigin="anonymous"></script>
+<!-- the latest library --> <script src="https://kit.fontawesome.com/9f3296d911.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
 integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
 crossorigin=""/>
@@ -86,301 +86,300 @@ crossorigin=""/>
 </div>
 
 <!-- Intro and Map -->
-    <div class="w3-container w3-row w3-center" style="padding:60px 230px 30px 230px">
-        <h1>The city of Bauska invites you to start or expand your business in a modern, enriched Bauska Industrial Park</h1>
-        <h3>The functional environment scalable for any production size</h3>
-    </div>
-    <div class="w3-container" id="map" style="padding:30px 230px 70px 230px">
-        <!-- Connotations with Icons -->
-        <div class="w3-row-padding w3-center" style="margin-top:20px">
-            <div class="w3-quarter">
-                <i class="fa fa-industry w3-margin-bottom w3-jumbo w3-center"></i>
-                <h3>Eco-production<br/></h3>
-            </div>
-            <div class="w3-quarter">
-                <i class="fas fa-tractor w3-margin-bottom w3-jumbo"></i>
-                <h3>Agriculture</h3>
-            </div>
-            <div class="w3-quarter">
-                <i class="fas fa-warehouse w3-margin-bottom w3-jumbo"></i>
-                <h3>Warehouse</h3>
-            </div>
-            <div class="w3-quarter">
-                <i class="fas fa-truck-loading w3-margin-bottom w3-jumbo"></i>
-                <h3>Logistic Center</h3>
-            </div>
+<div class="w3-container w3-row w3-center" style="padding:60px 230px 30px 230px">
+    <h1>The city of Bauska invites you to start or expand your business in a modern, enriched Bauska Industrial Park</h1>
+    <h3>The functional environment scalable for any production size</h3>
+</div>
+<div class="w3-container" id="map" style="padding:30px 230px 70px 230px">
+    <!-- Connotations with Icons -->
+    <div class="w3-row-padding w3-center" style="margin-top:20px">
+        <div class="w3-quarter">
+            <i class="fa fa-industry w3-margin-bottom w3-jumbo w3-center"></i>
+            <h3>Eco-production<br/></h3>
+        </div>
+        <div class="w3-quarter">
+            <i class="fas fa-tractor w3-margin-bottom w3-jumbo"></i>
+            <h3>Agriculture</h3>
+        </div>
+        <div class="w3-quarter">
+            <i class="fas fa-warehouse w3-margin-bottom w3-jumbo"></i>
+            <h3>Warehouse</h3>
+        </div>
+        <div class="w3-quarter">
+            <i class="fas fa-truck-loading w3-margin-bottom w3-jumbo"></i>
+            <h3>Logistic Center</h3>
         </div>
     </div>
+</div>
 
 <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
 
 <div id="map2">
 <div id="mapid" style="margin:0px 280px; float:right; width:70%; height:600px; position:relative; z-index: 998;">
 <script type="text/javascript" src="geojson.js"></script>
 <script>
 
-    var mymap = L.map('mapid',{
-        scrollWheelZoom: false
-    }).setView([56.4096, 24.2236], 13);
+var mymap = L.map('mapid',{
+    scrollWheelZoom: false
+}).setView([56.4096, 24.2236], 13);
 
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2tydWdzIiwiYSI6ImNrZ2Y2MmViZjB6dDUyeWxlZWE1eTk4NHUifQ.e_mPuWKu_BO3lJ4iGfLZ-g', {
-        maxZoom: 18,
-        attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors & <a href="http://edzl.lv/lv/projekta-norise/kartes">edzl</a>, ' +
-            '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-            'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-        id: 'mapbox/streets-v11',
-        tileSize: 512,
-        zoomOffset: -1
-    }).addTo(mymap);
+L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=pk.eyJ1Ijoia2tydWdzIiwiYSI6ImNrZ2Y2MmViZjB6dDUyeWxlZWE1eTk4NHUifQ.e_mPuWKu_BO3lJ4iGfLZ-g', {
+    maxZoom: 18,
+    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors & <a href="http://edzl.lv/lv/projekta-norise/kartes">edzl</a>, ' +
+        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+    id: 'mapbox/streets-v11',
+    tileSize: 512,
+    zoomOffset: -1
+}).addTo(mymap);
 
-    //Icons
-    var highvIcon = L.icon({
-    iconUrl: 'Images/highv.svg',
-    iconSize:     [25, 21.6], // size of the icon
-    iconAnchor:   [12.5, 11], // point of the icon which will correspond to marker's location
-    popupAnchor:  [0, -11] // point from which the popup should open relative to the iconAnchor
-    });
+//Icons
+var highvIcon = L.icon({
+iconUrl: 'Images/highv.svg',
+iconSize:     [25, 21.6], // size of the icon
+iconAnchor:   [12.5, 11], // point of the icon which will correspond to marker's location
+popupAnchor:  [0, -11] // point from which the popup should open relative to the iconAnchor
+});
 
-    var sewageIcon = L.icon({
-    iconUrl: 'Images/plumberSewage.svg',
-    iconSize:     [25, 25],
-    iconAnchor:   [12.5, 12.5],
-    popupAnchor:  [0, -12.5]
-    });
+var sewageIcon = L.icon({
+iconUrl: 'Images/plumberSewage.svg',
+iconSize:     [25, 25],
+iconAnchor:   [12.5, 12.5],
+popupAnchor:  [0, -12.5]
+});
 
-    var pinIcon = L.icon({
-    iconUrl: 'Images/pinIcon.svg',
-    iconSize:     [20, 20],
-    iconAnchor:   [10, -10],
-    popupAnchor:  [0, 10]
-    });
+var pinIcon = L.icon({
+iconUrl: 'Images/pinIcon.svg',
+iconSize:     [20, 20],
+iconAnchor:   [10, -10],
+popupAnchor:  [0, 10]
+});
 
-    var gasIcon = L.icon({
-    iconUrl: 'Images/gasIcon.svg',
-    iconSize:     [20, 28],
-    iconAnchor:   [10, 14],
-    popupAnchor:  [0, -14]
-    });
+var gasIcon = L.icon({
+iconUrl: 'Images/gasIcon.svg',
+iconSize:     [20, 28],
+iconAnchor:   [10, 14],
+popupAnchor:  [0, -14]
+});
 
-    var anchorIcon = L.icon({
-    iconUrl: 'Images/anchor.svg',//251 × 304
-    iconSize:     [25, 30.4],
-    iconAnchor:   [12.5, 15.2],
-    popupAnchor:  [0, -15.2]
-    });
+var anchorIcon = L.icon({
+iconUrl: 'Images/anchor.svg',//251 × 304
+iconSize:     [25, 30.4],
+iconAnchor:   [12.5, 15.2],
+popupAnchor:  [0, -15.2]
+});
 
-    var polyLidl7 = L.polygon([
-    [56.405672, 24.227670],
-    [56.405514, 24.227482],
-    [56.403965, 24.225122],
-    [56.404998, 24.222150],
-    [56.405508, 24.222729],
-    [56.405995, 24.223180]
-    ],).bindPopup("<p>The area of this plot is 4.8 ha</p><p>Runway street 7</p><small>Plot-code: 4001 005 0344</small>").addTo(mymap);
+var polyLidl7 = L.polygon([
+[56.405672, 24.227670],
+[56.405514, 24.227482],
+[56.403965, 24.225122],
+[56.404998, 24.222150],
+[56.405508, 24.222729],
+[56.405995, 24.223180]
+],).bindPopup("<p>The area of this plot is 4.8 ha</p><p>Runway street 7</p><small>Plot-code: 4001 005 0344</small>").addTo(mymap);
 
-    var polyB1 = L.polygon([
-    [56.405781, 24.227707],
-    [56.407867, 24.228097],
-    [56.408074, 24.225968],
-    [56.405921, 24.225451],
-    ],).bindPopup("<p>The area of this plot is 3.1 ha</p><p>Biržu street 86</p>").addTo(mymap);
-    //appears to be owned by others
-    // var polyB2 = L.polygon([
-    // [56.403335, 24.224102],
-    // [56.403870, 24.222944],
-    // [56.402920, 24.221163],
-    // [56.402546, 24.222386],
-    // [56.402902, 24.223030],
-    // [56.403116, 24.223663]
-    // ],).bindPopup("<p>The area of this plot is 1.3 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB1 = L.polygon([
+[56.405781, 24.227707],
+[56.407867, 24.228097],
+[56.408074, 24.225968],
+[56.405921, 24.225451],
+],).bindPopup("<p>The area of this plot is 3.1 ha</p><p>Biržu street 86</p>").addTo(mymap);
+//appears to be owned by others
+// var polyB2 = L.polygon([
+// [56.403335, 24.224102],
+// [56.403870, 24.222944],
+// [56.402920, 24.221163],
+// [56.402546, 24.222386],
+// [56.402902, 24.223030],
+// [56.403116, 24.223663]
+// ],).bindPopup("<p>The area of this plot is 1.3 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB3 = L.polygon([
-    [56.402439, 24.222719],
-    [56.402397, 24.222740],
-    [56.402243, 24.223191],
-    [56.402267, 24.224489],
-    [56.402730, 24.225229],
-    [56.403110, 24.224328]
-    ],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB3 = L.polygon([
+[56.402439, 24.222719],
+[56.402397, 24.222740],
+[56.402243, 24.223191],
+[56.402267, 24.224489],
+[56.402730, 24.225229],
+[56.403110, 24.224328]
+],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB4 = L.polygon([
-    [56.403793, 24.226795],
-    [56.404173, 24.225883],
-    [56.403315, 24.224612],
-    [56.402961, 24.225594]
-    ],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB4 = L.polygon([
+[56.403793, 24.226795],
+[56.404173, 24.225883],
+[56.403315, 24.224612],
+[56.402961, 24.225594]
+],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB5 = L.polygon([
-    [56.403846, 24.226849],
-    [56.404214, 24.225926],
-    [56.404873, 24.226956],
-    [56.404558, 24.227815]
-    ],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB5 = L.polygon([
+[56.403846, 24.226849],
+[56.404214, 24.225926],
+[56.404873, 24.226956],
+[56.404558, 24.227815]
+],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB6 = L.polygon([
-    [56.404873, 24.226956],
-    [56.404558, 24.227815],
-    [56.404238, 24.230046],
-    [56.403852, 24.230513],
-    [56.402495, 24.232680],
-    [56.402840, 24.242041],
-    [56.403597, 24.242545],
-    [56.406927, 24.239981],
-    [56.407212, 24.236677],
-    [56.405057, 24.236205],
-    [56.405615, 24.228051]
-    ],).bindPopup("<p>The area of this plot is 27 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB6 = L.polygon([
+[56.404873, 24.226956],
+[56.404558, 24.227815],
+[56.404238, 24.230046],
+[56.403852, 24.230513],
+[56.402495, 24.232680],
+[56.402840, 24.242041],
+[56.403597, 24.242545],
+[56.406927, 24.239981],
+[56.407212, 24.236677],
+[56.405057, 24.236205],
+[56.405615, 24.228051]
+],).bindPopup("<p>The area of this plot is 27 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB7 = L.polygon([
-    [56.404446, 24.223475],
-    [56.403938, 24.225079],
-    [56.403407, 24.224424],
-    [56.404024, 24.222965]
-    ],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB7 = L.polygon([
+[56.404446, 24.223475],
+[56.403938, 24.225079],
+[56.403407, 24.224424],
+[56.404024, 24.222965]
+],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB8 = L.polygon([
-    [56.404977, 24.222102],
-    [56.404517, 24.221603],
-    [56.404036, 24.222906],
-    [56.404457, 24.223480]
-    ],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB8 = L.polygon([
+[56.404977, 24.222102],
+[56.404517, 24.221603],
+[56.404036, 24.222906],
+[56.404457, 24.223480]
+],).bindPopup("<p>The area of this plot is 0.7 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB9 = L.polygon([
-    [56.407105, 24.223260],
-    [56.40607, 24.223263],
-    [56.405909, 24.225408],
-    [56.406986, 24.225664]
-    ],).bindPopup("<p>The area of this plot is 1.4 ha</p><p>Biržu street 86</p>").addTo(mymap);
-    var polyB10 = L.polygon([
-    [56.407046, 24.225664],
-    [56.408059, 24.225935],
-    [56.408264, 24.223254],
-    [56.407135, 24.223276]
-    ],).bindPopup("<p>The area of this plot is 1.5 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB9 = L.polygon([
+[56.407105, 24.223260],
+[56.40607, 24.223263],
+[56.405909, 24.225408],
+[56.406986, 24.225664]
+],).bindPopup("<p>The area of this plot is 1.4 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB10 = L.polygon([
+[56.407046, 24.225664],
+[56.408059, 24.225935],
+[56.408264, 24.223254],
+[56.407135, 24.223276]
+],).bindPopup("<p>The area of this plot is 1.5 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB11 = L.polygon([
-    [56.407936, 24.228029],
-    [56.409492, 24.228208],
-    [56.409129, 24.223351],
-    [56.408369, 24.223351]
-    ],).bindPopup("<p>The area of this plot is 4.6 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB11 = L.polygon([
+[56.407936, 24.228029],
+[56.409492, 24.228208],
+[56.409129, 24.223351],
+[56.408369, 24.223351]
+],).bindPopup("<p>The area of this plot is 4.6 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB12 = L.polygon([
-    [56.407816, 24.228483],
-    [56.407746, 24.229370],
-    [56.406102, 24.22926],
-    [56.406147, 24.228248]
-    ],).bindPopup("p>The area of this plot is 2.0 ha</p><p>Biržu street 66</p><<small>Plot-code: 4001 005 0119</small>").addTo(mymap);
+var polyB12 = L.polygon([
+[56.407816, 24.228483],
+[56.407746, 24.229370],
+[56.406102, 24.22926],
+[56.406147, 24.228248]
+],).bindPopup("p>The area of this plot is 2.0 ha</p><p>Biržu street 66</p><<small>Plot-code: 4001 005 0119</small>").addTo(mymap);
 
-    var polyB13 = L.polygon([
-    [56.406071, 24.229239],
-    [56.406106, 24.228252],
-    [56.405779, 24.228183],
-    [56.405732, 24.229218]
-    ],).bindPopup("<p>The area of this plot is 0.4 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB13 = L.polygon([
+[56.406071, 24.229239],
+[56.406106, 24.228252],
+[56.405779, 24.228183],
+[56.405732, 24.229218]
+],).bindPopup("<p>The area of this plot is 0.4 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB14 = L.polygon([
-    [56.407723, 24.229411],
-    [56.407426, 24.233195],
-    [56.406583, 24.232821],
-    [56.406767, 24.229378]
-    ],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB14 = L.polygon([
+[56.407723, 24.229411],
+[56.407426, 24.233195],
+[56.406583, 24.232821],
+[56.406767, 24.229378]
+],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB15 = L.polygon([
-    [56.406737, 24.229389],
-    [56.405734, 24.229283],
-    [56.405523, 24.232523],
-    [56.406536, 24.2328]
-    ],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB15 = L.polygon([
+[56.406737, 24.229389],
+[56.405734, 24.229283],
+[56.405523, 24.232523],
+[56.406536, 24.2328]
+],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB16 = L.polygon([
-    [56.407402, 24.233262],
-    [56.407221, 24.236352],
-    [56.406331, 24.236084],
-    [56.406571, 24.232897]
-    ],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB16 = L.polygon([
+[56.407402, 24.233262],
+[56.407221, 24.236352],
+[56.406331, 24.236084],
+[56.406571, 24.232897]
+],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB17 = L.polygon([
-    [56.406512, 24.232897],
-    [56.406286, 24.236073],
-    [56.405268, 24.235821],
-    [56.405509, 24.232575]
-    ],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB17 = L.polygon([
+[56.406512, 24.232897],
+[56.406286, 24.236073],
+[56.405268, 24.235821],
+[56.405509, 24.232575]
+],).bindPopup("<p>The area of this plot is 2.2 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB18 = L.polygon([
-    [56.407046, 24.239909],
-    [56.407957, 24.228511],
-    [56.409592, 24.228776],
-    [56.409919, 24.231641],
-    [56.409176, 24.2318],
-    [56.409046, 24.23446],
-    [56.41015, 24.234294],
-    [56.410542, 24.23789]
-    ],).bindPopup("<p>The area of this plot is 14.5 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB18 = L.polygon([
+[56.407046, 24.239909],
+[56.407957, 24.228511],
+[56.409592, 24.228776],
+[56.409919, 24.231641],
+[56.409176, 24.2318],
+[56.409046, 24.23446],
+[56.41015, 24.234294],
+[56.410542, 24.23789]
+],).bindPopup("<p>The area of this plot is 14.5 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    var polyB19 = L.polygon([
-    [56.409919, 24.231675],
-    [56.409192, 24.231826],
-    [56.409064, 24.234416],
-    [56.410138, 24.234266]
-    ],).bindPopup("<p>The area of this plot is 2.0 ha</p><small>Plot-code: 4001 005 0113</small><p>Biržu street 33</p>").addTo(mymap);
+var polyB19 = L.polygon([
+[56.409919, 24.231675],
+[56.409192, 24.231826],
+[56.409064, 24.234416],
+[56.410138, 24.234266]
+],).bindPopup("<p>The area of this plot is 2.0 ha</p><small>Plot-code: 4001 005 0113</small><p>Biržu street 33</p>").addTo(mymap);
 
-    var polyB20 = L.polygon([
-    [56.40945, 24.223229],
-    [56.406054, 24.223186],
-    [56.405998, 24.223151],
-    [56.405007, 24.222127],
-    [56.404422, 24.221483],
-    [56.406007, 24.21541]
-    ],).bindPopup("<p>The area of this plot is 28.8 ha</p><p>Biržu street 86</p>").addTo(mymap);
+var polyB20 = L.polygon([
+[56.40945, 24.223229],
+[56.406054, 24.223186],
+[56.405998, 24.223151],
+[56.405007, 24.222127],
+[56.404422, 24.221483],
+[56.406007, 24.21541]
+],).bindPopup("<p>The area of this plot is 28.8 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
-    //for debug purposes
-    // var popup = L.popup();
+//for debug purposes
+// var popup = L.popup();
 
-    // function onMapClick(e) {
-    //     popup
-    //         .setLatLng(e.latlng)
-    //         .setContent("You clicked the map at " + e.latlng.toString())
-    //         .openOn(mymap);
-    // }
+// function onMapClick(e) {
+//     popup
+//         .setLatLng(e.latlng)
+//         .setContent("You clicked the map at " + e.latlng.toString())
+//         .openOn(mymap);
+// }
 
-    // mymap.on('click', onMapClick);
-    //end of debug
-    var transformer = L.marker([56.404190, 24.229617], {icon: highvIcon}).addTo(mymap);
-    var popup1 = transformer.bindPopup("<p>2.4 MW Transformer</p>");
+// mymap.on('click', onMapClick);
+//end of debug
+var transformer = L.marker([56.404190, 24.229617], {icon: highvIcon}).addTo(mymap);
+var popup1 = transformer.bindPopup("<p>2.4 MW Transformer</p>");
 
-    var sevage = L.marker([56.403335, 24.223909], {icon: sewageIcon}).addTo(mymap);
-    var popup2 = sevage.bindPopup("<p>Sewage pump station</p>");
+var sevage = L.marker([56.403335, 24.223909], {icon: sewageIcon}).addTo(mymap);
+var popup2 = sevage.bindPopup("<p>Sewage pump station</p>");
 
-    var gas = L.marker([56.406185, 24.217021], {icon: gasIcon}).addTo(mymap);
-    var popup4 = gas.bindPopup("<p>Medium pressure gas pipeline</p>");
+var gas = L.marker([56.406185, 24.217021], {icon: gasIcon}).addTo(mymap);
+var popup4 = gas.bindPopup("<p>Medium pressure gas pipeline</p>");
 
-    var anchorL = L.marker([56.522666, 20.980797], {icon: anchorIcon}).addTo(mymap);
-    var popup5 = anchorL.bindPopup("<h3>Port of Liepaja</h3><p>One of the three largest Latvian ice-free ports provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
+var anchorL = L.marker([56.522666, 20.980797], {icon: anchorIcon}).addTo(mymap);
+var popup5 = anchorL.bindPopup("<h3>Port of Liepaja</h3><p>One of the three largest Latvian ice-free ports provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
 
-    var anchorR = L.marker([57.008309, 24.092331], {icon: anchorIcon}).addTo(mymap);
-    var popup6 = anchorR.bindPopup("<h3>Port of Riga</h3><p>The largest Latvian ice-free port provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
+var anchorR = L.marker([57.008309, 24.092331], {icon: anchorIcon}).addTo(mymap);
+var popup6 = anchorR.bindPopup("<h3>Port of Riga</h3><p>The largest Latvian ice-free port provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
 
-    var anchorV = L.marker([57.397971, 21.560540], {icon: anchorIcon}).addTo(mymap);
-    var popup7 = anchorV.bindPopup("<h3>Port of Ventspils</h3><p>One of the three largest Latvian ice-free ports provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
+var anchorV = L.marker([57.397971, 21.560540], {icon: anchorIcon}).addTo(mymap);
+var popup7 = anchorV.bindPopup("<h3>Port of Ventspils</h3><p>One of the three largest Latvian ice-free ports provides reliable access 365 days a year</p><p>Nevertheless, there are still a number of port locations available for businesses, within customs-free zones and with direct sea access.</p>");
 
-    // commented to hide the pin - it moves when zooming out
-    // var centre = L.marker([56.4082863, 24.1876674], {icon: pinIcon}).addTo(mymap);
-    // var popup3 = centre.bindPopup("<p>Centre of Bauska</p>");
+// commented to hide the pin - it moves when zooming out
+// var centre = L.marker([56.4082863, 24.1876674], {icon: pinIcon}).addTo(mymap);
+// var popup3 = centre.bindPopup("<p>Centre of Bauska</p>");
 
-    L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
-    L.geoJSON(gasLine2, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
-    L.geoJSON(munBorder, {style:{color: "#336699"}}).bindPopup("<p>Bauska Municipality border</p>").addTo(mymap);
-    L.geoJSON(waterLine, {style:{color: "#33cccc"}}).bindPopup("<p>Water–line</p>").addTo(mymap);
+L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
+L.geoJSON(gasLine2, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
+L.geoJSON(munBorder, {style:{color: "#336699"}}).bindPopup("<p>Bauska Municipality border</p>").addTo(mymap);
+L.geoJSON(waterLine, {style:{color: "#33cccc"}}).bindPopup("<p>Water–line</p>").addTo(mymap);
 
-    L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km).</h3>").addTo(mymap);
+L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km).</h3>").addTo(mymap);
 
-    L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3><h3>Helsinki–Prague</h3>").addTo(mymap);
+L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3><h3>Helsinki–Prague</h3>").addTo(mymap);
 
 </script>
-
 </div>
 </div>
 <div class="w3-container" style="padding:30px 180px 50px 180px">
@@ -418,15 +417,21 @@ crossorigin=""/>
     <iframe width="80%" height="650" src="https://www.youtube.com/embed/fGyLxtvvjZs?modestbranding=1&color=white" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </center>
-<div class="w3-container" style="padding:0px 0px 60px"></div>
+<!-- <div class="w3-container" style="padding:0px 0px 60px"></div> -->
     <!-- Paragraph + Image -->
-    <div class="w3-row-padding" style="margin-top:20px">
+    <div class="w3-row-padding" style="margin-top:80px">
         <div class="w3-col m6">
             <h3>General information about the industrial zone</h3>
             <p>Area is intended for mixed & business and industrial construction, that includes several land plots.</p><p>Available for land rental starting from 0.4 hectares.</p>
-                <ul><li>70 hectares of land for industrial objects</li><li>15 hectares of land for commercial objects</li><li>10 hectares of land for apartment buildings, including hotels</li><li>15 hectares of land for objects of public significance, including hospitals and health care institutions</li><li>4.5 hectares of land for traffic infrastructure objects</li> <li>0.5 hectares of land for utilities networks and objects</li></ul>
+                <ul><li>70 hectares of land for industrial objects</li>
+                    <li>15 hectares of land for commercial objects</li>
+                    <li>10 hectares of land for apartment buildings, including hotels</li>
+                    <li>15 hectares of land for objects of public significance, including hospitals and health care institutions</li>
+                    <li>4.5 hectares of land for traffic infrastructure objects</li>
+                    <li>0.5 hectares of land for utilities networks and objects</li></ul>
                 <p>Electricity connection is located at a distance of 0 km to 0.5 km, with 3MW of available capacity.
                     Water pipeline is located at a distance of 0 to 0.5 km. Gas connection is located at a 0-0.5 km distance from the medium pressure gas pipeline. Sewer system is located at a distance of about 0-0.5 km. ICT cable is located at a distance from 0 to 0.5km.</p><br>
+                    <p><a href="https://www.bauska.lv/allfiles/files/Bauska%20ILP_EN.pdf" target="_blank">Overview file</a></p>
             <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Pictures</a></p><br> -->
 
         </div>
@@ -442,7 +447,7 @@ crossorigin=""/>
         <br>Inhabitants in Bauska
     </div>
     <div class="w3-quarter">
-        <span class="w3-xxlarge">786.7 km<sup>2</sup> and 6.14 km<sup>2</sup></span>
+        <span class="w3-xxlarge">786.7&nbsp;km<sup>2</sup> and 6.14&nbsp;km<sup>2</sup></span>
         <br>Land area of the municipality and Bauska
         <!-- From bauska.lv website -->
     </div>
@@ -493,12 +498,12 @@ crossorigin=""/>
 </div>
 <div class="w3-container w3-row w3-center w3-padding-48">
 <h3>The Bauska County is situated in the central part of Latvia and the Zemgale Region, it borders with the Republic of Lithuania.</h3><br><h3>Zemgale has been called the Granary of Latvia for a long time now. Agriculture, i.e. livestock farming and crop farming, is the main field of entrepreneurship in Bauska County. The fertile agriculture land and favourable geographical location advance the successful operation of agriculture production processing companies. In most cases it’s fertility rate exceeds 60 points.</h3><h3>Via Baltica (as seen in Map) ensures the flow of people and transport in the both direction of Riga and the direction of Lithuania.
-<a href="#" target="_blank" id="newsHyper" onclick="openNews();">Entrepreneurial news from Bauska website</a></h3>
+<a href="#" target="_blank" id="newsHyper" onclick="openNews();">Entrepreneurial news from Bauska</a> & <a href="https://www.bauska.lv/allfiles/files/Industrial%20territory%20of%20Bauska%20%20Municipality_2020.pdf" target="_blank">Overview of Bauska County</a></h3>
     <br>
     <div class="w3-container w3-padding-64">
         <div class="w3-row-padding">
         <div class="w3-quarter">
-            <h3>Apartment rent cost in Bauska is<br>100 - 250 eur/month</h3>
+            <h3>Apartment rent cost in Bauska is<br>100&#8209;250 eur/month</h3>
         </div>
         <div class="w3-quarter">
             <h3>Industrial zone rent per square meter is 0.03 eur/month</h3>
