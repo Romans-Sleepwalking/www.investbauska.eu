@@ -8,7 +8,8 @@
 <meta name="theme-color" content="#202945"/>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="StyleShit_2.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
 <!-- an old library <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"> -->
 <!-- the latest library --> <script src="https://kit.fontawesome.com/9f3296d911.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
@@ -20,7 +21,7 @@ crossorigin=""/>
 </head>
 <div>
     <style>
-        body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+        body,h1,h2,h3,h4,h5,h6 {font-family: "Josefin Sans", sans-serif}
         body, html {
             height: 100%;
             line-height: 1.8;
@@ -80,11 +81,11 @@ crossorigin=""/>
 </div>
 
 <!-- Intro and Map -->
-<div class="w3-container w3-row w3-center" style="padding:60px 230px 30px 230px">
+<div class="w3-container w3-row w3-center" style="padding:200px 230px 30px 230px">
     <h1>The city of Bauska invites you to start or expand your business in a modern, enriched Bauska Industrial Park</h1>
     <h3>The functional environment scalable for any production size</h3>
 </div>
-<div class="w3-container" id="map" style="padding:30px 230px 70px 230px">
+<div class="w3-container" id="map" style="padding:60px 230px 70px 230px">
     <!-- Connotations with Icons -->
     <div class="w3-row-padding w3-center" style="margin-top:20px">
         <div class="w3-quarter">
@@ -416,7 +417,7 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E6
 </div>
 </div>
 <!-- About -->
-<div id="stats" class="w3-container w3-row w3-center w3-dark-grey w3-padding-16">
+<div id="stats" class="w3-container w3-row w3-center w3-padding-16" style="background-color:#202945">
     <img class="w3-image w3-round-large" src="Images/stats.png" width="60%" alt="Bauska">
 </div>
 <center>
@@ -437,18 +438,18 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E6
                     <li>4.5 hectares of land for traffic infrastructure objects</li>
                     <li>0.5 hectares of land for utilities networks and objects</li></ul>
                 <p>Electricity connection is located at a distance of 0 km to 0.5 km, with 3MW of available capacity.
-                    Water pipeline is located at a distance of 0 to 0.5 km. Gas connection is located at a 0-0.5 km distance from the medium pressure gas pipeline. Sewer system is located at a distance of about 0-0.5 km. ICT cable is located at a distance from 0 to 0.5km.</p>
+                    Water pipeline, Gas connection (medium pressure), Sewer system and ICT cable are located at a distance of 0 to 0.5 km.</p>
                     <p><a href="https://www.bauska.lv/allfiles/files/Bauska%20ILP_EN.pdf" target="_blank">More information about the park</a></p>
             <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Pictures</a></p><br> -->
 
         </div>
         <div class="w3-col m6" style="padding-bottom: 25px;">
-            <img class="w3-image w3-round-large" src="Images/IZT_car.jpg" width="80%" alt="Bauska">
+            <img class="w3-image w3-round-large" src="Images/DSC_0027ds.jpg" height="550px" alt="Bauska">
         </div>
     </div>
 </div>
 <!-- Statistics in numbers https://data.csb.gov.lv/pxweb/lv/iedz/iedz__iedzrakst/IRG010.px/-->
-<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+<div class="w3-container w3-row w3-center w3-padding-64" style="background-color:#202945; color:white">
     <div class="w3-quarter">
         <span class="w3-xxlarge">22 442</span>
         <br>Inhabitants in Bauska
@@ -489,17 +490,13 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E6
         </div>
         <div class="w3-col m6">
             <p class="w3-wide w3-large"><i class="fa w3-margin-right"></i>Percent of land in use for Agriculture</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center w3-large" style="width:80%">80%</div>
+            <div style="background-color:#d0cbc5">
+                <div class="w3-container w3-center w3-large" style="width:80%; background-color:#202945; color:white">80%</div>
             </div>
             <p class="w3-wide w3-large"><i class="fa w3-margin-right"></i>Percent of land in use for Forestry</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center w3-large" style="width:13%">13%</div>
+            <div style="background-color:#d0cbc5">
+                <div class="w3-container w3-center w3-large" style="width:13%; background-color:#202945; color:white">13%</div>
             </div>
-            <!-- <p class="w3-wide w3-large"><i class="fa w3-margin-right"></i>Something-3</p>
-            <div class="w3-grey">
-                <div class="w3-container w3-dark-grey w3-center w3-large" style="width:75%">75%</div>
-            </div> -->
         </div>
     </div>
 </div>
@@ -544,10 +541,10 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E6
     <div style="margin-top:40px">
         <div style="float:left; width:50%; margin:auto; padding:15px 35px 25px">
             <h3>Ilze Tijone</h3>
-            <img class="w3-image w3-round" style="float:right; width:121px; height:140px" src="Images/IlzeCrop.jpg" alt="Head of Development and Planning Ilze Tijone">
+            <img class="w3-image w3-round" style="float:right; width:105px; height:140px" src="Images/BildeIT.jpg" alt="Head of Development and Planning Ilze Tijone">
             <b>Head of Development and Planning</b>
             <p><i class="fas fa-at fa-fw w3-xlarge w3-margin-right" style="color:black"></i> Email: <a href="mailto:ilze.tijone@bauska.lv" style="text-decoration:none">ilze.tijone@bauska.lv</a></p>
-            <p><i class="fas fa-phone-alt fa-fw w3-xlarge w3-margin-right"></i> Phone: <a href="tel:37163922233" style="text-decoration:none">+371 63922233</a>
+            <p><i class="fas fa-phone-alt fa-fw w3-xlarge w3-margin-right"></i> Phone: <a href="tel:37120213021" style="text-decoration:none">+371 20213021</a>, <a href="tel:37163922233" style="text-decoration:none">+371 63922233</a>
         </div>
         <div style="float:right; width:50%; margin:auto; padding:15px 35px 25px">
             <h3>Dace Platonova</h3>
