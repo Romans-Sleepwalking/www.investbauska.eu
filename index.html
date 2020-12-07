@@ -26,12 +26,6 @@ crossorigin=""/>
             line-height: 1.8;
         }
         /* Full height image header */
-        .bgimg-1 {
-            background-position: center;
-            background-size: cover;
-            background-image: url("/BIZ Website/IZT/Images/MainBG.jpg");
-            min-height: 100%;
-        }
         .w3-bar .w3-button {
             padding: 16px;
         }
@@ -333,7 +327,20 @@ var polyB20 = L.polygon([
 [56.405998, 24.223151],
 [56.405007, 24.222127],
 [56.404422, 24.221483],
-[56.406007, 24.21541]
+[56.405182, 24.219747],
+[56.405799, 24.215412],
+[56.404018, 24.214532],
+[56.404149, 24.213524],
+[56.405787, 24.213932],
+[56.407034, 24.214232],
+[56.407200, 24.215369],
+[56.407960, 24.215240],
+[56.409788, 24.213610],
+[56.409705, 24.217622],
+[56.410512, 24.220154],
+[56.410394, 24.220948],
+[56.409088, 24.222279],
+
 ],).bindPopup("<p>The area of this plot is 28.8 ha</p><p>Biržu street 86</p>").addTo(mymap);
 
 //for debug purposes
@@ -375,9 +382,9 @@ L.geoJSON(gasLine2, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure ga
 L.geoJSON(munBorder, {style:{color: "#336699"}}).bindPopup("<p>Bauska Municipality border</p>").addTo(mymap);
 L.geoJSON(waterLine, {style:{color: "#33cccc"}}).bindPopup("<p>Water–line</p>").addTo(mymap);
 
-L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km).</h3>").addTo(mymap);
+L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km)</h3>").addTo(mymap);
 
-L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3><h3>Helsinki–Prague</h3>").addTo(mymap);
+L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E67</h3><h3>Helsinki–Prague; Via&nbsp;Baltica</h3>").addTo(mymap);
 
 </script>
 </div>
@@ -419,7 +426,7 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3
 </center>
 <!-- <div class="w3-container" style="padding:0px 0px 60px"></div> -->
     <!-- Paragraph + Image -->
-    <div class="w3-row-padding" style="margin-top:80px">
+    <div class="w3-row-padding" style="margin-top:80px; margin-left: 30px;">
         <div class="w3-col m6">
             <h3>General information about the industrial zone</h3>
             <p>Area is intended for mixed & business and industrial construction, that includes several land plots.</p><p>Available for land rental starting from 0.4 hectares.</p>
@@ -430,8 +437,8 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3
                     <li>4.5 hectares of land for traffic infrastructure objects</li>
                     <li>0.5 hectares of land for utilities networks and objects</li></ul>
                 <p>Electricity connection is located at a distance of 0 km to 0.5 km, with 3MW of available capacity.
-                    Water pipeline is located at a distance of 0 to 0.5 km. Gas connection is located at a 0-0.5 km distance from the medium pressure gas pipeline. Sewer system is located at a distance of about 0-0.5 km. ICT cable is located at a distance from 0 to 0.5km.</p><br>
-                    <p><a href="https://www.bauska.lv/allfiles/files/Bauska%20ILP_EN.pdf" target="_blank">Overview file</a></p>
+                    Water pipeline is located at a distance of 0 to 0.5 km. Gas connection is located at a 0-0.5 km distance from the medium pressure gas pipeline. Sewer system is located at a distance of about 0-0.5 km. ICT cable is located at a distance from 0 to 0.5km.</p>
+                    <p><a href="https://www.bauska.lv/allfiles/files/Bauska%20ILP_EN.pdf" target="_blank">More information about the park</a></p>
             <!-- <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Pictures</a></p><br> -->
 
         </div>
@@ -568,7 +575,7 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route E67</h3
     </div>
     </div>
 </div>
-<!-- Media -->
+<!-- Media / Gallery -->
 <!--
 <div class="w3-container" style="padding:128px 16px" id="work">
     <h3 class="w3-center">Gallery</h3>
