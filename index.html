@@ -166,6 +166,10 @@ iconAnchor:   [12.5, 15.2],
 popupAnchor:  [0, -15.2]
 });
 
+// Bauska Municipality border
+L.geoJSON(munBorder, {style:{color: "#336699", opacity: "0.75", fillOpacity:"0.125"}}).bindPopup("<p>Bauska Municipality border (starting July 2021)</p><p>Previous borders of merged municipalities are still marked</p>").addTo(mymap);
+
+// Land plots with their coords
 var polyLidl7 = L.polygon([
 [56.405672, 24.227670],
 [56.405514, 24.227482],
@@ -380,7 +384,7 @@ var popup7 = anchorV.bindPopup("<h3>Port of Ventspils</h3><p>One of the three la
 
 L.geoJSON(gasLine, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
 L.geoJSON(gasLine2, {style:{color: "#cccc33"}}).bindPopup("<p>Medium pressure gas pipeline</p>").addTo(mymap);
-L.geoJSON(munBorder, {style:{color: "#336699"}}).bindPopup("<p>Bauska Municipality border</p>").addTo(mymap);
+
 L.geoJSON(waterLine, {style:{color: "#33cccc"}}).bindPopup("<p>Water–line</p>").addTo(mymap);
 
 L.geoJSON(rails, {style:{color: "#cc6633"}}).bindPopup("<h2>RailBaltica</h2><p>Rail Baltica is an ongoing railway infrastructure project to link Finland, Estonia, Latvia, Lithuania and Poland with a European standard gauge rail line.</p><p>On the map is shown the track in Latvia. For more info visit railbaltica.org</p><h3>A freight connection to the Industrial Zone is possible (2 km)</h3>").addTo(mymap);
@@ -480,7 +484,7 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E6
 <div class="w3-container w3-light-grey w3-padding-64">
     <div class="w3-row-padding">
         <div class="w3-col m6">
-            <h3>Agriculture, Industry and Shipping.</h3>
+            <h3>Agriculture, Industry and Shipping</h3>
             <p>The Bauska Region has always been well-known for it's developed Agriculture,<br>
                 Industry and Shipping.
             </p>
@@ -490,11 +494,11 @@ L.geoJSON(e67, {style:{color: "#669966"}}).bindPopup("<h3>European route&nbsp;E6
         </div>
         <div class="w3-col m6">
             <p class="w3-wide w3-large"><i class="fa w3-margin-right"></i>Percent of land in use for Agriculture</p>
-            <div style="background-color:#d0cbc5">
+            <div style="background-color:#dbd7d3">
                 <div class="w3-container w3-center w3-large" style="width:80%; background-color:#202945; color:white">80%</div>
             </div>
             <p class="w3-wide w3-large"><i class="fa w3-margin-right"></i>Percent of land in use for Forestry</p>
-            <div style="background-color:#d0cbc5">
+            <div style="background-color:#dbd7d3">
                 <div class="w3-container w3-center w3-large" style="width:13%; background-color:#202945; color:white">13%</div>
             </div>
         </div>
