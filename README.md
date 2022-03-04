@@ -9,5 +9,5 @@
 The Bauska Industrial Park located in Bauska, Latvia is struggling to attract private investments - businesses are not interested in basing/expanding on the Industrial Zone. The industrial team in Riga Business School has executed a social project to improve Bauska city image and information channel via Bauska Industrial Park webpage. The product has been hosted on [https://www.investbauska.eu/](https://www.investbauska.eu/ "Invest Bauska"), and currently in control of the Bauska state.
 
 This web-app should use:
- - Open-source icons
- - JavaScript to connect to the email service.
+ - Open-source visuals: fonts, icons
+ - JavaScript to connect to display the map and connect to the email services.
