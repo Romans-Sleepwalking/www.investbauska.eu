@@ -10,4 +10,4 @@ The Bauska Industrial Park located in Bauska, Latvia is struggling to attract pr
 
 This web-app should use:
  - Open-source visuals: fonts, icons
- - JavaScript to connect to display the map and connect to the email services.
+ - JavaScript to display the map and connect to the email services.
